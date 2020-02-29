@@ -1,0 +1,57 @@
+/* Applied to each element, i.e. style "stacks" */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 8px;
+    background-color: #111111;
+}
+
+#input, #button {
+    padding: 0px 16px;
+
+    background-color: #111111;
+    border: none;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+#input {
+    width: 400px;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+#input::selection {
+    background-color: #005ccc;
+    color: #ffffff;
+}
+
+#button {
+    cursor: pointer;
+    width: 65px;
+    border-radius: 2px;
+    transition-duration: 0.1s;
+}
+
+#button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#button svg {
+    fill: rgba(255, 255, 255, 0.88);
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+
+    transition-duration: 0.1s;
+}
+
+#button:hover svg {
+    fill: rgba(255, 255, 255, 1.0);
+}
+
